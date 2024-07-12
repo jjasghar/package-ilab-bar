@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Post installation process started"
+
+echo "Install binary symlink"
+ln -si "/Library/ilab-bar/ilab-bar.app/Contents/MacOS/ilab-bar" /usr/local/bin/ilab-bar
+
+echo "Post installation process finished"

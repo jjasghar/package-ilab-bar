@@ -1,0 +1,3 @@
+[submodule "src/ilab-bar"]
+	path = src/ilab-bar
+	url = https://github.com/jjasghar/ilab-bar

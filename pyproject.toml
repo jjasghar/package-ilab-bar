@@ -1,0 +1,96 @@
+# This project was generated with 0.3.19 using template: https://github.com/beeware/briefcase-template@v0.3.19
+[tool.briefcase]
+project_name = "ilab-bar"
+bundle = "ai.instructlab"
+version = "0.0.1"
+url = "https://github.com/jjasghar/ilab-bar"
+license.file = "LICENSE"
+author = "JJ Asghar"
+author_email = "awesome@instructlab.ai"
+
+[tool.briefcase.app.ilab-bar]
+formal_name = "ilab-bar"
+description = "A title bar controller for ilab"
+long_description = """
+Control your ilab instance from your title bar
+"""
+sources = [
+    "src/ilab-bar/ilab_bar",
+]
+test_sources = [
+    "src/ilab-bar/tests",
+]
+
+console_app = true
+requires = [
+    "git+https://github.com/jjasghar/ilab-bar.git@v1.0.0"
+]
+test_requires = [
+    "pytest",
+]
+
+[tool.briefcase.app.ilab-bar.macOS]
+universal_build = false
+requires = [
+]
+
+[tool.briefcase.app.ilab-bar.linux]
+requires = [
+]
+
+[tool.briefcase.app.ilab-bar.linux.system.debian]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.ilab-bar.linux.system.rhel]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.ilab-bar.linux.system.suse]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.ilab-bar.linux.system.arch]
+system_requires = [
+    # Add any system packages needed at build the app here
+]
+
+system_runtime_requires = [
+    # Add any system packages needed at runtime here
+]
+
+[tool.briefcase.app.ilab-bar.linux.flatpak]
+flatpak_runtime = "org.freedesktop.Platform"
+flatpak_runtime_version = "23.08"
+flatpak_sdk = "org.freedesktop.Sdk"
+
+[tool.briefcase.app.ilab-bar.windows]
+requires = [
+]
+
+# Mobile deployments
+[tool.briefcase.app.ilab-bar.iOS]
+supported = false
+
+[tool.briefcase.app.ilab-bar.android]
+supported = false
+
+# Web deployments
+[tool.briefcase.app.ilab-bar.web]
+supported = false
+
