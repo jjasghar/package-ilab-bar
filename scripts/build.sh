@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo rm -rf /usr/local/bin/ilab* && sudo rm -rf /Library/ilab*
+sudo rm -rf /usr/local/bin/ilab-bar && sudo rm -rf /Library/ilab*
 rm -f dist/*
 
 briefcase create
